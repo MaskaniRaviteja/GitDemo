@@ -1,0 +1,10 @@
+{
+    "initial": true,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INITIAL_Valid_Data.csv"
+    ],
+    "psxBatchID": "20240806095014",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}

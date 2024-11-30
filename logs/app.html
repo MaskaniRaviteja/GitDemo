@@ -1,0 +1,1344 @@
+2024-08-06 09:49:03.772 [main] INFO  main_suites.RestAssuredlog4j - Starting setup process.
+2024-08-06 09:49:04.259 [main] INFO  main_suites.RestAssuredlog4j - Setup process completed successfully.
+2024-08-06 09:49:04.294 [main] INFO  main_suites.RestAssuredlog4j - Starting TC001_TestActivateService.
+2024-08-06 09:50:10.373 [main] INFO  main_suites.RestAssuredlog4j - All services activated successfully.
+2024-08-06 09:50:10.538 [main] INFO  main_suites.RestAssuredlog4j - Starting TC002_ParentTableAsABatchInitial.
+2024-08-06 09:50:10.556 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for initial batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INITIAL_Valid_Data.csv
+2024-08-06 09:50:14.626 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": true,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INITIAL_Valid_Data.csv"
+    ],
+    "psxBatchID": "20240806095014",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:50:17.030 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:17.030 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:50:17.039 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for initial batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INITIAL_Valid_Data.csv
+2024-08-06 09:50:18.254 [main] INFO  main_suites.RestAssuredlog4j - Initial batch processing for parent table completed successfully.
+2024-08-06 09:50:18.282 [main] INFO  main_suites.RestAssuredlog4j - Starting TC003_ValidateTableCountsForInitial.
+2024-08-06 09:50:18.303 [main] INFO  main_suites.RestAssuredlog4j - Validation of table counts for initial batch completed successfully.
+2024-08-06 09:50:18.309 [main] INFO  main_suites.RestAssuredlog4j - Starting TC004_ValidateInitialMaxMinRecordID.
+2024-08-06 09:50:18.342 [main] INFO  main_suites.RestAssuredlog4j - Validation of Max and Min Record IDs for initial batch completed successfully.
+2024-08-06 09:50:18.348 [main] INFO  main_suites.RestAssuredlog4j - Starting TC005_ValidateInitialMaxMinNSPKey.
+2024-08-06 09:50:18.351 [main] INFO  main_suites.RestAssuredlog4j - Validation of Max and Min NSP Keys for initial batch completed successfully.
+2024-08-06 09:50:18.355 [main] INFO  main_suites.RestAssuredlog4j - Starting TC006_CheckInitialDuplicateNSPKeys.
+2024-08-06 09:50:18.359 [main] INFO  main_suites.RestAssuredlog4j - Check for duplicate NSP Keys in initial batch completed successfully.
+2024-08-06 09:50:18.364 [main] INFO  main_suites.RestAssuredlog4j - Starting TC007_CheckInitialDuplicateRecordIDs.
+2024-08-06 09:50:18.368 [main] INFO  main_suites.RestAssuredlog4j - Check for duplicate Record IDs in initial batch completed successfully.
+2024-08-06 09:50:18.372 [main] INFO  main_suites.RestAssuredlog4j - Starting TC008_CheckInitialDuplicateCustUnqIDs.
+2024-08-06 09:50:18.375 [main] INFO  main_suites.RestAssuredlog4j - Check for duplicate Cust_Unq_Id's in initial batch completed successfully.
+2024-08-06 09:50:18.379 [main] INFO  main_suites.RestAssuredlog4j - Starting TC009_GetExistingAsABatchInitial.
+2024-08-06 09:50:20.413 [main] INFO  main_suites.RestAssuredlog4j - Starting the execution of getExistingAsABatch method for the initial batch.
+2024-08-06 09:50:22.416 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL9: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL9"}
+    ]
+}
+2024-08-06 09:50:22.548 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:22.548 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL9",
+      "nspKey": 0,
+      "recordID": 0,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:23.598 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL9 matches input custUnqID: INITIAL9
+2024-08-06 09:50:24.604 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL14: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL14"}
+    ]
+}
+2024-08-06 09:50:24.619 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:24.619 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL14",
+      "nspKey": 1,
+      "recordID": 1,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:25.622 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL14 matches input custUnqID: INITIAL14
+2024-08-06 09:50:26.623 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL16: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL16"}
+    ]
+}
+2024-08-06 09:50:26.635 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:26.635 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL16",
+      "nspKey": 2,
+      "recordID": 2,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:27.637 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL16 matches input custUnqID: INITIAL16
+2024-08-06 09:50:28.639 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL25: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL25"}
+    ]
+}
+2024-08-06 09:50:28.677 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:28.678 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL25",
+      "nspKey": 3,
+      "recordID": 3,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:29.689 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL25 matches input custUnqID: INITIAL25
+2024-08-06 09:50:30.697 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL7: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL7"}
+    ]
+}
+2024-08-06 09:50:30.697 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:30.697 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL7",
+      "nspKey": 4,
+      "recordID": 4,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:31.714 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL7 matches input custUnqID: INITIAL7
+2024-08-06 09:50:32.729 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL11: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL11"}
+    ]
+}
+2024-08-06 09:50:32.760 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:32.760 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL11",
+      "nspKey": 5,
+      "recordID": 5,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:33.779 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL11 matches input custUnqID: INITIAL11
+2024-08-06 09:50:34.782 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL17: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL17"}
+    ]
+}
+2024-08-06 09:50:34.793 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:34.793 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL17",
+      "nspKey": 6,
+      "recordID": 6,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:35.809 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL17 matches input custUnqID: INITIAL17
+2024-08-06 09:50:36.819 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL30: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL30"}
+    ]
+}
+2024-08-06 09:50:36.837 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:36.837 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL30",
+      "nspKey": 7,
+      "recordID": 7,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:37.841 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL30 matches input custUnqID: INITIAL30
+2024-08-06 09:50:38.855 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL12: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL12"}
+    ]
+}
+2024-08-06 09:50:38.870 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:38.870 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL12",
+      "nspKey": 8,
+      "recordID": 8,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:39.882 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL12 matches input custUnqID: INITIAL12
+2024-08-06 09:50:40.883 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL18: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL18"}
+    ]
+}
+2024-08-06 09:50:40.918 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:40.918 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL18",
+      "nspKey": 9,
+      "recordID": 9,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:41.924 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL18 matches input custUnqID: INITIAL18
+2024-08-06 09:50:42.925 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL2: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL2"}
+    ]
+}
+2024-08-06 09:50:42.956 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:42.956 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL2",
+      "nspKey": 10,
+      "recordID": 10,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:43.960 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL2 matches input custUnqID: INITIAL2
+2024-08-06 09:50:44.960 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL22: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL22"}
+    ]
+}
+2024-08-06 09:50:44.987 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:44.987 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL22",
+      "nspKey": 11,
+      "recordID": 11,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:45.996 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL22 matches input custUnqID: INITIAL22
+2024-08-06 09:50:47.001 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL26: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL26"}
+    ]
+}
+2024-08-06 09:50:47.086 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:47.086 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL26",
+      "nspKey": 12,
+      "recordID": 12,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:48.105 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL26 matches input custUnqID: INITIAL26
+2024-08-06 09:50:49.118 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL28: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL28"}
+    ]
+}
+2024-08-06 09:50:49.118 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:49.118 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL28",
+      "nspKey": 13,
+      "recordID": 13,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:50.150 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL28 matches input custUnqID: INITIAL28
+2024-08-06 09:50:51.151 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL5: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL5"}
+    ]
+}
+2024-08-06 09:50:51.215 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:51.215 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL5",
+      "nspKey": 14,
+      "recordID": 14,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:52.221 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL5 matches input custUnqID: INITIAL5
+2024-08-06 09:50:53.227 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL15: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL15"}
+    ]
+}
+2024-08-06 09:50:53.243 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:53.243 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL15",
+      "nspKey": 15,
+      "recordID": 15,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:54.249 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL15 matches input custUnqID: INITIAL15
+2024-08-06 09:50:55.260 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL3: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL3"}
+    ]
+}
+2024-08-06 09:50:55.275 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:55.275 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL3",
+      "nspKey": 16,
+      "recordID": 16,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:56.303 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL3 matches input custUnqID: INITIAL3
+2024-08-06 09:50:57.306 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL6: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL6"}
+    ]
+}
+2024-08-06 09:50:57.328 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:57.328 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL6",
+      "nspKey": 17,
+      "recordID": 17,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:50:58.338 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL6 matches input custUnqID: INITIAL6
+2024-08-06 09:50:59.341 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL10: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL10"}
+    ]
+}
+2024-08-06 09:50:59.354 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:50:59.354 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL10",
+      "nspKey": 18,
+      "recordID": 18,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:00.369 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL10 matches input custUnqID: INITIAL10
+2024-08-06 09:51:01.379 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL20: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL20"}
+    ]
+}
+2024-08-06 09:51:01.408 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:01.409 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL20",
+      "nspKey": 19,
+      "recordID": 19,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:02.416 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL20 matches input custUnqID: INITIAL20
+2024-08-06 09:51:03.426 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL4: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL4"}
+    ]
+}
+2024-08-06 09:51:03.459 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:03.459 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL4",
+      "nspKey": 20,
+      "recordID": 20,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:04.465 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL4 matches input custUnqID: INITIAL4
+2024-08-06 09:51:05.466 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL1: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL1"}
+    ]
+}
+2024-08-06 09:51:05.480 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:05.480 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL1",
+      "nspKey": 21,
+      "recordID": 21,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:06.499 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL1 matches input custUnqID: INITIAL1
+2024-08-06 09:51:07.500 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL13: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL13"}
+    ]
+}
+2024-08-06 09:51:07.510 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:07.510 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL13",
+      "nspKey": 22,
+      "recordID": 22,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:08.541 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL13 matches input custUnqID: INITIAL13
+2024-08-06 09:51:09.548 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL19: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL19"}
+    ]
+}
+2024-08-06 09:51:09.570 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:09.570 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL19",
+      "nspKey": 23,
+      "recordID": 23,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:10.573 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL19 matches input custUnqID: INITIAL19
+2024-08-06 09:51:11.575 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL21: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL21"}
+    ]
+}
+2024-08-06 09:51:11.590 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:11.590 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL21",
+      "nspKey": 24,
+      "recordID": 24,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:12.594 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL21 matches input custUnqID: INITIAL21
+2024-08-06 09:51:13.606 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL23: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL23"}
+    ]
+}
+2024-08-06 09:51:13.627 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:13.627 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL23",
+      "nspKey": 25,
+      "recordID": 25,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:14.631 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL23 matches input custUnqID: INITIAL23
+2024-08-06 09:51:15.641 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL24: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL24"}
+    ]
+}
+2024-08-06 09:51:15.652 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:15.652 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL24",
+      "nspKey": 26,
+      "recordID": 26,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:16.656 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL24 matches input custUnqID: INITIAL24
+2024-08-06 09:51:17.657 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL29: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL29"}
+    ]
+}
+2024-08-06 09:51:17.666 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:17.666 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL29",
+      "nspKey": 27,
+      "recordID": 27,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:18.715 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL29 matches input custUnqID: INITIAL29
+2024-08-06 09:51:19.723 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL8: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL8"}
+    ]
+}
+2024-08-06 09:51:19.733 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:19.733 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL8",
+      "nspKey": 28,
+      "recordID": 28,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:20.735 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL8 matches input custUnqID: INITIAL8
+2024-08-06 09:51:21.737 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INITIAL27: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL27"}
+    ]
+}
+2024-08-06 09:51:21.745 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:21.746 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL27",
+      "nspKey": 29,
+      "recordID": 29,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:22.758 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INITIAL27 matches input custUnqID: INITIAL27
+2024-08-06 09:51:22.758 [main] INFO  main_suites.RestAssuredlog4j - CVP table custUnqIDs count: 30 === C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INITIAL_Valid_Data.csv file count: 30
+2024-08-06 09:51:22.758 [main] INFO  main_suites.RestAssuredlog4j - Completed execution of getExistingAsABatch method for the initial batch.
+2024-08-06 09:51:22.758 [main] INFO  main_suites.RestAssuredlog4j - Retrieval of existing records as a batch for initial batch completed successfully.
+2024-08-06 09:51:22.774 [main] INFO  main_suites.RestAssuredlog4j - Starting TC010_ParentTableAsABatchIncremental.
+2024-08-06 09:51:27.786 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Valid_Data.csv
+2024-08-06 09:51:31.841 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": false,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Valid_Data.csv"
+    ],
+    "psxBatchID": "20240806095131",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:51:31.965 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:31.965 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:51:31.965 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Valid_Data.csv
+2024-08-06 09:51:32.997 [main] INFO  main_suites.RestAssuredlog4j - ParentTableAsABatchIncremental processed successfully.
+2024-08-06 09:51:33.020 [main] INFO  main_suites.RestAssuredlog4j - Starting TC011_ValidateTableCountsForIncremental.
+2024-08-06 09:51:33.045 [main] INFO  main_suites.RestAssuredlog4j - ValidateTableCounts completed successfully.
+2024-08-06 09:51:33.051 [main] INFO  main_suites.RestAssuredlog4j - Starting TC012_ValidateIncrementalMaxMinNSPKey.
+2024-08-06 09:51:33.053 [main] INFO  main_suites.RestAssuredlog4j - ValidateMaxMinNSPKey completed successfully.
+2024-08-06 09:51:33.058 [main] INFO  main_suites.RestAssuredlog4j - Starting TC013_CheckIncrementalDuplicateNSPKeys.
+2024-08-06 09:51:33.061 [main] INFO  main_suites.RestAssuredlog4j - CheckDuplicateNSPKeys completed successfully.
+2024-08-06 09:51:33.076 [main] INFO  main_suites.RestAssuredlog4j - Starting TC014_CheckIncrementalDuplicateRecordIDs.
+2024-08-06 09:51:33.081 [main] INFO  main_suites.RestAssuredlog4j - CheckDuplicateRecordIDs completed successfully.
+2024-08-06 09:51:33.085 [main] INFO  main_suites.RestAssuredlog4j - Starting TC015_CheckIncrementalDuplicateCustUnqIDs.
+2024-08-06 09:51:33.086 [main] INFO  main_suites.RestAssuredlog4j - CheckDuplicateCustUnqIDs completed successfully.
+2024-08-06 09:51:33.089 [main] INFO  main_suites.RestAssuredlog4j - Starting TC016_GetExistingAsABatchIncremental.
+2024-08-06 09:51:36.107 [main] INFO  main_suites.RestAssuredlog4j - Starting the execution of getExistingAsABatch method for the incremental batch.
+2024-08-06 09:51:38.118 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID1: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID1"}
+    ]
+}
+2024-08-06 09:51:38.133 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:38.133 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID1",
+      "nspKey": 30,
+      "recordID": 30,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:39.199 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID1 matches input custUnqID: INC_VALID1
+2024-08-06 09:51:40.200 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID10: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID10"}
+    ]
+}
+2024-08-06 09:51:40.212 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:40.212 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID10",
+      "nspKey": 34,
+      "recordID": 34,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:41.216 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID10 matches input custUnqID: INC_VALID10
+2024-08-06 09:51:42.218 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID11: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID11"}
+    ]
+}
+2024-08-06 09:51:42.246 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:42.247 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID11",
+      "nspKey": 39,
+      "recordID": 39,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:43.259 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID11 matches input custUnqID: INC_VALID11
+2024-08-06 09:51:44.272 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID12: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID12"}
+    ]
+}
+2024-08-06 09:51:44.292 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:44.293 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID12",
+      "nspKey": 42,
+      "recordID": 42,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:45.306 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID12 matches input custUnqID: INC_VALID12
+2024-08-06 09:51:46.319 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID13: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID13"}
+    ]
+}
+2024-08-06 09:51:46.338 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:46.339 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID13",
+      "nspKey": 35,
+      "recordID": 35,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:47.341 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID13 matches input custUnqID: INC_VALID13
+2024-08-06 09:51:48.343 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID14: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID14"}
+    ]
+}
+2024-08-06 09:51:48.351 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:48.351 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID14",
+      "nspKey": 31,
+      "recordID": 31,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:49.353 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID14 matches input custUnqID: INC_VALID14
+2024-08-06 09:51:50.354 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID2: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID2"}
+    ]
+}
+2024-08-06 09:51:50.363 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:50.363 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID2",
+      "nspKey": 40,
+      "recordID": 40,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:51.366 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID2 matches input custUnqID: INC_VALID2
+2024-08-06 09:51:52.366 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID3: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID3"}
+    ]
+}
+2024-08-06 09:51:52.374 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:52.375 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID3",
+      "nspKey": 32,
+      "recordID": 32,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:53.390 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID3 matches input custUnqID: INC_VALID3
+2024-08-06 09:51:54.391 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID4: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID4"}
+    ]
+}
+2024-08-06 09:51:54.400 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:54.400 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID4",
+      "nspKey": 37,
+      "recordID": 37,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:55.571 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID4 matches input custUnqID: INC_VALID4
+2024-08-06 09:51:56.580 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID5: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID5"}
+    ]
+}
+2024-08-06 09:51:56.580 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:56.580 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID5",
+      "nspKey": 33,
+      "recordID": 33,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:57.592 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID5 matches input custUnqID: INC_VALID5
+2024-08-06 09:51:58.594 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID6: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID6"}
+    ]
+}
+2024-08-06 09:51:58.641 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:51:58.641 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID6",
+      "nspKey": 38,
+      "recordID": 38,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:51:59.643 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID6 matches input custUnqID: INC_VALID6
+2024-08-06 09:52:00.652 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID7: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID7"}
+    ]
+}
+2024-08-06 09:52:00.669 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:00.669 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID7",
+      "nspKey": 43,
+      "recordID": 43,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:01.681 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID7 matches input custUnqID: INC_VALID7
+2024-08-06 09:52:02.695 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID8: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID8"}
+    ]
+}
+2024-08-06 09:52:02.703 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:02.703 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID8",
+      "nspKey": 41,
+      "recordID": 41,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:03.705 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID8 matches input custUnqID: INC_VALID8
+2024-08-06 09:52:04.707 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID INC_VALID9: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INC_VALID9"}
+    ]
+}
+2024-08-06 09:52:04.725 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:04.725 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INC_VALID9",
+      "nspKey": 36,
+      "recordID": 36,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:05.740 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: INC_VALID9 matches input custUnqID: INC_VALID9
+2024-08-06 09:52:05.741 [main] INFO  main_suites.RestAssuredlog4j - CVP table custUnqIDs count: 14 === C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Valid_Data.csv file count: 14
+2024-08-06 09:52:05.741 [main] INFO  main_suites.RestAssuredlog4j - Completed execution of getExistingAsABatch method for the incremental batch.
+2024-08-06 09:52:05.742 [main] INFO  main_suites.RestAssuredlog4j - Get Existing As A Batch - Incremental completed successfully.
+2024-08-06 09:52:05.761 [main] INFO  main_suites.RestAssuredlog4j - Starting TC017_getAddTargetNewOrUpdate.
+2024-08-06 09:52:06.765 [main] DEBUG main_suites.RestAssuredlog4j - Reading first column data from the Excel file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/Addtarget.xlsx
+2024-08-06 09:52:07.069 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-06 09:52:07.138 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-08-06 09:52:07.766 [main] DEBUG main_suites.RestAssuredlog4j - First column data read successfully from the Excel file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/Addtarget.xlsx
+2024-08-06 09:52:07.766 [main] DEBUG main_suites.RestAssuredlog4j - First column data: [ADD_800, ADD_801, ADD_802, ADD_803, ADD_804, ADD_805, ADD_806, ADD_807, ADD_808, ADD_809, ADD_810]
+2024-08-06 09:52:07.781 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-06 09:52:07.781 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-08-06 09:52:08.806 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_800",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:08.841 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:08.841 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_800","clipBeanNames":"Customer","recordID":44,"nspkey":44}
+2024-08-06 09:52:08.843 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_800 matches input custUnqID: ADD_800
+2024-08-06 09:52:09.843 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_801",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:09.881 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:09.881 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_801","clipBeanNames":"Customer","recordID":45,"nspkey":45}
+2024-08-06 09:52:09.883 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_801 matches input custUnqID: ADD_801
+2024-08-06 09:52:10.899 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_802",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:10.931 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:10.931 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_802","clipBeanNames":"Customer","recordID":46,"nspkey":46}
+2024-08-06 09:52:10.933 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_802 matches input custUnqID: ADD_802
+2024-08-06 09:52:11.938 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_803",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:11.954 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:11.954 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_803","clipBeanNames":"Customer","recordID":47,"nspkey":47}
+2024-08-06 09:52:11.955 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_803 matches input custUnqID: ADD_803
+2024-08-06 09:52:12.956 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_804",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:12.986 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:12.986 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_804","clipBeanNames":"Customer","recordID":48,"nspkey":48}
+2024-08-06 09:52:12.990 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_804 matches input custUnqID: ADD_804
+2024-08-06 09:52:13.991 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_805",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:14.012 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:14.013 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_805","clipBeanNames":"Customer","recordID":49,"nspkey":49}
+2024-08-06 09:52:14.015 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_805 matches input custUnqID: ADD_805
+2024-08-06 09:52:15.028 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_806",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:15.060 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:15.060 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_806","clipBeanNames":"Customer","recordID":50,"nspkey":50}
+2024-08-06 09:52:15.060 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_806 matches input custUnqID: ADD_806
+2024-08-06 09:52:16.070 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_807",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:16.080 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:16.080 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_807","clipBeanNames":"Customer","recordID":51,"nspkey":51}
+2024-08-06 09:52:16.082 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_807 matches input custUnqID: ADD_807
+2024-08-06 09:52:17.084 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_808",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:17.105 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:17.105 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_808","clipBeanNames":"Customer","recordID":52,"nspkey":52}
+2024-08-06 09:52:17.107 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_808 matches input custUnqID: ADD_808
+2024-08-06 09:52:18.109 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_809",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:18.120 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:18.120 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_809","clipBeanNames":"Customer","recordID":53,"nspkey":53}
+2024-08-06 09:52:18.152 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_809 matches input custUnqID: ADD_809
+2024-08-06 09:52:19.155 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+"lchgTime": "2024-06-17T10:56:06.074Z",
+"partitionNumber": "p0",
+"sourceSystemName": "Customer",
+"numberOfPartitions": 1,
+"custUnqID": "ADD_810",
+"clipBeanNames": "Customer"
+}
+2024-08-06 09:52:19.174 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:19.174 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: {"lchgTime":"2024-06-17T10:56:06.074+00:00","partitionNumber":"p0","sourceSystemName":"Customer","numberOfPartitions":1,"custUnqID":"ADD_810","clipBeanNames":"Customer","recordID":54,"nspkey":54}
+2024-08-06 09:52:19.176 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_810 matches input custUnqID: ADD_810
+2024-08-06 09:52:19.176 [main] INFO  main_suites.RestAssuredlog4j - Get AddTarget NewOrUpdate completed successfully.
+2024-08-06 09:52:19.187 [main] INFO  main_suites.RestAssuredlog4j - Starting TC018_GetExistingAsABatchAddTarget.
+2024-08-06 09:52:22.208 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-06 09:52:22.209 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-08-06 09:52:22.234 [main] INFO  main_suites.RestAssuredlog4j - Starting the execution of getExistingAsABatch method for the AddTarget batch.
+2024-08-06 09:52:24.247 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_800: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_800"}
+    ]
+}
+2024-08-06 09:52:24.255 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:24.255 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_800",
+      "nspKey": 44,
+      "recordID": 44,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:25.258 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_800 matches input custUnqID: ADD_800
+2024-08-06 09:52:26.259 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_801: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_801"}
+    ]
+}
+2024-08-06 09:52:26.265 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:26.265 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_801",
+      "nspKey": 45,
+      "recordID": 45,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:27.269 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_801 matches input custUnqID: ADD_801
+2024-08-06 09:52:28.283 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_802: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_802"}
+    ]
+}
+2024-08-06 09:52:28.299 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:28.299 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_802",
+      "nspKey": 46,
+      "recordID": 46,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:29.301 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_802 matches input custUnqID: ADD_802
+2024-08-06 09:52:30.308 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_803: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_803"}
+    ]
+}
+2024-08-06 09:52:30.323 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:30.323 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_803",
+      "nspKey": 47,
+      "recordID": 47,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:31.335 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_803 matches input custUnqID: ADD_803
+2024-08-06 09:52:32.337 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_804: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_804"}
+    ]
+}
+2024-08-06 09:52:32.343 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:32.344 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_804",
+      "nspKey": 48,
+      "recordID": 48,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:33.358 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_804 matches input custUnqID: ADD_804
+2024-08-06 09:52:34.371 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_805: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_805"}
+    ]
+}
+2024-08-06 09:52:34.389 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:34.389 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_805",
+      "nspKey": 49,
+      "recordID": 49,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:35.392 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_805 matches input custUnqID: ADD_805
+2024-08-06 09:52:36.393 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_806: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_806"}
+    ]
+}
+2024-08-06 09:52:36.423 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:36.423 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_806",
+      "nspKey": 50,
+      "recordID": 50,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:37.425 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_806 matches input custUnqID: ADD_806
+2024-08-06 09:52:38.425 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_807: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_807"}
+    ]
+}
+2024-08-06 09:52:38.430 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:38.430 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_807",
+      "nspKey": 51,
+      "recordID": 51,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:39.440 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_807 matches input custUnqID: ADD_807
+2024-08-06 09:52:40.442 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_808: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_808"}
+    ]
+}
+2024-08-06 09:52:40.450 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:40.450 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_808",
+      "nspKey": 52,
+      "recordID": 52,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:41.458 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_808 matches input custUnqID: ADD_808
+2024-08-06 09:52:42.458 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_809: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_809"}
+    ]
+}
+2024-08-06 09:52:42.474 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:42.474 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_809",
+      "nspKey": 53,
+      "recordID": 53,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:43.478 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_809 matches input custUnqID: ADD_809
+2024-08-06 09:52:44.485 [main] DEBUG main_suites.RestAssuredlog4j - Request Body for CustUnqID ADD_810: {
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "ADD_810"}
+    ]
+}
+2024-08-06 09:52:44.488 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:44.488 [main] INFO  main_suites.RestAssuredlog4j - Response Body: {
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "ADD_810",
+      "nspKey": 54,
+      "recordID": 54,
+      "partitionNumber": "p0"
+    }
+  ]
+}
+2024-08-06 09:52:45.495 [main] INFO  main_suites.RestAssuredlog4j - Response custUnqID: ADD_810 matches input custUnqID: ADD_810
+2024-08-06 09:52:45.495 [main] INFO  main_suites.RestAssuredlog4j - CVP table custUnqIDs count: 11 === C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/Addtarget.xlsx file count: 11
+2024-08-06 09:52:45.495 [main] INFO  main_suites.RestAssuredlog4j - Completed execution of getExistingAsABatch method for the AddTarget batch.
+2024-08-06 09:52:45.495 [main] INFO  main_suites.RestAssuredlog4j - Get Existing As A Batch - AddTarget completed successfully.
+2024-08-06 09:52:45.495 [main] INFO  main_suites.RestAssuredlog4j - Starting TC019_CheckIncrementalUpdates.
+2024-08-06 09:52:45.495 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates.csv
+2024-08-06 09:52:49.566 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": false,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates.csv"
+    ],
+    "psxBatchID": "20240806095249",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:52:49.683 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:49.683 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:52:49.684 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates.csv
+2024-08-06 09:52:49.686 [main] INFO  main_suites.RestAssuredlog4j - CheckIncrementalUpdates completed successfully.
+2024-08-06 09:52:49.690 [main] INFO  main_suites.RestAssuredlog4j - Starting TC020_CheckIncrementalDeletes.
+2024-08-06 09:52:49.690 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Deletes.csv
+2024-08-06 09:52:53.712 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": false,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Deletes.csv"
+    ],
+    "psxBatchID": "20240806095253",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:52:53.816 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:53.816 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:52:53.816 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Deletes.csv
+2024-08-06 09:52:53.831 [main] INFO  main_suites.RestAssuredlog4j - CheckIncrementalDeletes completed successfully.
+2024-08-06 09:52:53.831 [main] INFO  main_suites.RestAssuredlog4j - Starting TC021_CheckUpdates_Deletes.
+2024-08-06 09:52:53.831 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for initial batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_UD.csv
+2024-08-06 09:52:57.883 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": true,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_UD.csv"
+    ],
+    "psxBatchID": "20240806095257",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:52:58.016 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:52:58.017 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:52:58.017 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for initial batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_UD.csv
+2024-08-06 09:52:58.018 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates_Deletes.csv
+2024-08-06 09:53:02.045 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": false,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates_Deletes.csv"
+    ],
+    "psxBatchID": "20240806095302",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:53:02.141 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:53:02.141 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:53:02.142 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates_Deletes.csv
+2024-08-06 09:53:02.146 [main] INFO  main_suites.RestAssuredlog4j - Check Updates_Deletes completed successfully.
+2024-08-06 09:53:02.152 [main] INFO  main_suites.RestAssuredlog4j - Starting TC022_CheckUpdates_Deletes_NewInserts.
+2024-08-06 09:53:02.153 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for initial batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_UDN.csv
+2024-08-06 09:53:06.215 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": true,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_UDN.csv"
+    ],
+    "psxBatchID": "20240806095306",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:53:06.397 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:53:06.397 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:53:06.398 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for initial batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_UDN.csv
+2024-08-06 09:53:06.398 [main] INFO  main_suites.RestAssuredlog4j - Starting processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates_Deletes_Newinserts.csv
+2024-08-06 09:53:10.426 [main] DEBUG main_suites.RestAssuredlog4j - Request Body: {
+    "initial": false,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates_Deletes_Newinserts.csv"
+    ],
+    "psxBatchID": "20240806095310",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
+2024-08-06 09:53:10.489 [main] INFO  main_suites.RestAssuredlog4j - Received status code: 200
+2024-08-06 09:53:10.489 [main] DEBUG main_suites.RestAssuredlog4j - Response Body: 
+2024-08-06 09:53:10.490 [main] INFO  main_suites.RestAssuredlog4j - Completed processInitiate for incremental batch with file: C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Updates_Deletes_Newinserts.csv
+2024-08-06 09:53:10.497 [main] INFO  main_suites.RestAssuredlog4j - Check Updates_Deletes_NewInserts completed successfully.
+2024-08-06 09:53:10.499 [main] INFO  main_suites.RestAssuredlog4j - Starting application closure process.
+2024-08-06 09:53:10.502 [main] INFO  main_suites.RestAssuredlog4j - Application closure process completed successfully.

@@ -1,0 +1,6 @@
+{
+    "sourceSystemName": "Customer",
+    "custUNQIDs": [
+        {"custUnqID": "INITIAL8"}
+    ]
+}

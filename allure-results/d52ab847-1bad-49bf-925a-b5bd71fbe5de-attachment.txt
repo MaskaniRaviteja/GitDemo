@@ -1,0 +1,11 @@
+{
+  "sourceSystemName": "Customer",
+  "custUNQIDs": [
+    {
+      "custUnqID": "INITIAL17",
+      "nspKey": 6,
+      "recordID": 6,
+      "partitionNumber": "p0"
+    }
+  ]
+}

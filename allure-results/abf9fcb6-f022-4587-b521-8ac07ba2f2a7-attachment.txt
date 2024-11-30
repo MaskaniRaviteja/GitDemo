@@ -1,0 +1,10 @@
+{
+    "initial": false,
+    "numberOfPartitions": "1",
+    "cidFileNames": [
+        "C:/Users/ptpl-395.POSIDEX/eclipse-workspace/Prime360CloudV1/TestData/INCREMENTAL_Valid_Data.csv"
+    ],
+    "psxBatchID": "20240806095131",
+    "sourceSystemName": "Customer",
+    "clipbean": "true"
+}
